@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parkinson's Disease Resource & Prediction</title>
+  <link rel="stylesheet" href="/static/style1.css">
+  <style>
+    /* General Styling */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background-color: #000;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('/static/images/reference5.png') no-repeat center center/cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+    }
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+    }
+    .hero-buttons a {
+      margin-top: 1.5rem;
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .hero-buttons a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* Explore Section */
+    .explore-section {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: #000;
+    }
+    .explore-heading {
+      margin-bottom: 1.5rem;
+    }
+    .explore-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .explore-card {
+      background: #222;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      width: 300px;
+      transition: 0.3s;
+    }
+    .explore-card:hover {
+      transform: translateY(-10px);
+    }
+    .explore-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    /* Journal Section */
+    .journal-section {
+      background-color: #111;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .journal-posts {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .journal-post {
+      background: #222;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: left;
+      width: 300px;
+    }
+    .journal-post img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+
+    /* Form Section */
+    .form-card {
+      background: #222;
+      padding: 2rem;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: 2rem auto;
+    }
+    .form-card h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #555;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem;
+      background-color: #fff;
+      color: #000;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    .btn-primary {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background-color: #45a049;
+    }
+
+    /* Footer */
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 2rem 0;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay">
+      <nav class="navbar">
+        <h1 class="logo">PROACTIVE DIAGNOSIS</h1>
+        <ul class="nav-links">
+          <li><a href="#home">About</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#form-section">Prediction</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h2>Parkinson's Disease Resource & Prediction</h2>
+        <p>Empowering Individuals, Supporting Families, and Advancing Research</p>
+        <div class="hero-buttons">
+          <a href="#explore">Explore Now</a>
+          <a href="#form-section" class="btn btn-primary">Start Prediction</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Explore Section -->
+  <section id="explore" class="explore-section">
+    <h2 class="explore-heading">Explore the World of Research and Support</h2>
+    <div class="explore-container">
+      <div class="explore-card">
+        <img src="/static/research1.jpg" alt="Research">
+        <h3>Latest Research</h3>
+        <p>Stay updated with breakthrough Parkinson's research.</p>
+      </div>
+      <div class="explore-card">
+        <img src="/static/therapy.jpg" alt="Therapy">
+        <h3>Therapy Resources</h3>
+        <p>Discover therapies and strategies to manage symptoms.</p>
+      </div>
+      <div class="explore-card">
+        <img src="/static/support.jpg" alt="Support">
+        <h3>Community Support</h3>
+        <p>Find local and online support groups near you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journal Section -->
+  <section id="journal" class="journal-section">
+    <h2>The Journal</h2>
+    <div class="journal-posts">
+      <div class="journal-post">
+        <img src="/static/post1.jpg" alt="Post">
+        <h3>An Unforgettable Journey</h3>
+        <p>Discover how families cope with Parkinson's disease.</p>
+      </div>
+      <div class="journal-post">
+        <img src="/static/post2.jpg" alt="Post">
+        <h3>Innovations in Steel</h3>
+        <p>How technology helps in predicting Parkinson's symptoms.</p>
+      </div>
+    </div>
+  </section>
+
+   <!-- Parkinson's Prediction Form Section -->
+   <section id="form-section" class="container">
+    <div class="form-card">
+      <h2>Parkinson's Prediction</h2>
+      <form method="POST" action="/predict">
+        <div class="form-group">
+          <label for="mdvp_fo">MDVP:Fo(Hz):</label>
+          <input type="text" id="mdvp_fo" name="mdvp_fo" placeholder="Enter MDVP:Fo value" required>
+        </div>
+        <div class="form-group">
+          <label for="mdvp_fhi">MDVP:Fhi(Hz):</label>
+          <input type="text" id="mdvp_fhi" name="mdvp_fhi" placeholder="Enter MDVP:Fhi value" required>
+        </div>
+        <div class="form-group">
+          <label for="mdvp_flo">MDVP:Flo(Hz):</label>
+          <input type="text" id="mdvp_flo" name="mdvp_flo" placeholder="Enter MDVP:Flo value" required>
+        </div>
+        <div class="form-group">
+          <label for="mdvp_jitter">MDVP:Jitter(%):</label>
+          <input type="text" id="mdvp_jitter" name="mdvp_jitter" placeholder="Enter MDVP:Jitter value" required>
+        </div>
+        <div class="form-group">
+          <label for="mdvp_jitter_abs">MDVP:Jitter(Abs):</label>
+          <input type="text" id="mdvp_jitter_abs" name="mdvp_jitter_abs" placeholder="Enter MDVP:Jitter(Abs) value" required>
+        </div>
+        <div class="form-group">
+          <label for="mdvp_rap">MDVP:RAP:</label>
+          <input type="text" id="mdvp_rap" name="mdvp_rap" placeholder="Enter MDVP:RAP value" required>
+        </div>
+        <div class="form-group">
+          <label for="mdvp_ppq">MDVP:PPQ:</label>
+          <input type="text" id="mdvp_ppq" name="mdvp_ppq" placeholder="Enter MDVP:PPQ value" required>
+        </div>
+        <div class="form-group">
+          <label for="jitter_ddp">Jitter:DDP:</label>
+          <input type="text" id="jitter_ddp" name="jitter_ddp" placeholder="Enter Jitter:DDP value" required>
+        </div>
+        <div class="form-group">
+          <label for="mdvp_shimmer">MDVP:Shimmer:</label>
+          <input type="text" id="mdvp_shimmer" name="mdvp_shimmer" placeholder="Enter MDVP:Shimmer value" required>
+        </div>
+        <div class="form-group">
+          <label for="mdvp_shimmer_db">MDVP:Shimmer(dB):</label>
+          <input type="text" id="mdvp_shimmer_db" name="mdvp_shimmer_db" placeholder="Enter MDVP:Shimmer(dB) value" required>
+        </div>
+        <div class="form-group">
+          <label for="shimmer_apq3">Shimmer:APQ3:</label>
+          <input type="text" id="shimmer_apq3" name="shimmer_apq3" placeholder="Enter Shimmer:APQ3 value" required>
+        </div>
+        <div class="form-group">
+          <label for="shimmer_apq5">Shimmer:APQ5:</label>
+          <input type="text" id="shimmer_apq5" name="shimmer_apq5" placeholder="Enter Shimmer:APQ5 value" required>
+        </div>
+        <div class="form-group">
+          <label for="mdvp_apq">MDVP:APQ:</label>
+          <input type="text" id="mdvp_apq" name="mdvp_apq" placeholder="Enter MDVP:APQ value" required>
+        </div>
+        <div class="form-group">
+          <label for="shimmer_dda">Shimmer:DDA:</label>
+          <input type="text" id="shimmer_dda" name="shimmer_dda" placeholder="Enter Shimmer:DDA value" required>
+        </div>
+        <div class="form-group">
+          <label for="nhr">NHR:</label>
+          <input type="text" id="nhr" name="nhr" placeholder="Enter NHR value" required>
+        </div>
+        <div class="form-group">
+          <label for="hnr">HNR:</label>
+          <input type="text" id="hnr" name="hnr" placeholder="Enter HNR value" required>
+        </div>
+        <div class="form-group">
+          <label for="rpde">RPDE:</label>
+          <input type="text" id="rpde" name="rpde" placeholder="Enter RPDE value" required>
+        </div>
+        <div class="form-group">
+          <label for="dfa">DFA:</label>
+          <input type="text" id="dfa" name="dfa" placeholder="Enter DFA value" required>
+        </div>
+        <div class="form-group">
+          <label for="spread1">Spread1:</label>
+          <input type="text" id="spread1" name="spread1" placeholder="Enter Spread1 value" required>
+        </div>
+        <div class="form-group">
+          <label for="spread2">Spread2:</label>
+          <input type="text" id="spread2" name="spread2" placeholder="Enter Spread2 value" required>
+        </div>
+        <div class="form-group">
+          <label for="d2">D2:</label>
+          <input type="text" id="d2" name="d2" placeholder="Enter D2 value" required>
+        </div>
+        <div class="form-group">
+          <label for="ppe">PPE:</label>
+          <input type="text" id="ppe" name="ppe" placeholder="Enter PPE value" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Predict</button>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Proactive Diagnosis. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

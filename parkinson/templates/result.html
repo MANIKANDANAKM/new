@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style1.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay">
+            <nav class="navbar">
+                <h1 class="logo">PROACTIVE DIAGNOSIS</h1>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h2>Prediction Results</h2>
+                <p>Parkinson's Disease Prediction Outcome</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Result Section -->
+    <section class="container">
+        <div class="form-card" style="background-color: #f9d342;">
+            <h2>{{ result }}</h2>
+            {% if precautions %}
+            <p>{{ precautions | safe }}</p>
+            {% else %}
+            <p>No additional information is needed.</p>
+            {% endif %}
+            <a href="/" class="btn btn-secondary">Go Back</a>
+        </div>
+    </section>
+</body>
+</html>
